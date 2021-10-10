@@ -9,7 +9,7 @@ import { Date, Time } from "./time";
 
 export const CommitCard = ({
   result,
-  number,
+  id,
   commitMessage,
   branch,
   hash,
@@ -20,19 +20,19 @@ export const CommitCard = ({
       {result == "g" && (
         <>
           <GreenCircle className="circle" />
-          <span className="colored-green">#{number}</span>
+          <span className="colored-green">#{id}</span>
         </>
       )}
       {result == "p" && (
         <>
           <OrangeCircle className="circle" />
-          <span className="colored-green colored-orange">#{number}</span>
+          <span className="colored-green colored-orange">#{id}</span>
         </>
       )}
       {result == "b" && (
         <>
           <RedCircle className="circle" />
-          <span className="colored-green colored-red">#{number}</span>
+          <span className="colored-green colored-red">#{id}</span>
         </>
       )}
       <span className="commit-message">{commitMessage}</span>

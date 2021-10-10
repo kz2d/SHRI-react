@@ -25,7 +25,7 @@ export const BuildHistoryPage = () => {
     >
       <HistoryContainer>
         {mock.commits.map((item) => (
-          <CommitCard {...item} />
+          <CommitCard {...item} key={item.id} />
         ))}
         <div className="buttonContainer">
           <Button secondary>Show more</Button>

@@ -5,8 +5,10 @@ import { SettingsButton, Button } from "../components/greyButtons";
 import { Input, SmallInput } from "../components/input";
 import { useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { useDispatch } from "react-redux";
 
-export const SettingsPage = ({ setUser }) => {
+export const SettingsPage = () => {
+  const dispatch = useDispatch();
   const { register, handleSubmit, watch, formState } = useForm();
   const history = useHistory();
   return (
@@ -21,7 +23,10 @@ export const SettingsPage = ({ setUser }) => {
         onSubmit={handleSubmit(async (e) => {
           await fetch("https://react-hook-form.com/get-started");
           localStorage.setItem("user", JSON.stringify(e));
-          setUser(localStorage.getItem("user"));
+          dispatch({
+            payload: JSON.parse(localStorage.getItem("user")),
+            type: "set",
+          });
           history.push("/");
         })}
       >

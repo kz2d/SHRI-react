@@ -2,7 +2,7 @@
   "commits": [
     {
       "result": "g",
-      "number": "1368",
+      "id": "1368",
       "commitMessage": "add documentation for postgres scaler",
       "branch": "master",
       "hash": "95c4d8",
@@ -10,7 +10,7 @@
     },
     {
       "result": "b",
-      "number": "1367",
+      "id": "1367",
       "commitMessage": "add documentation for postgres scaler",
       "branch": "master",
       "hash": "95c4d8",
@@ -18,7 +18,7 @@
     },
     {
       "result": "p",
-      "number": "1366",
+      "id": "1366",
       "commitMessage": "add documentation for postgres scaler",
       "branch": "master",
       "hash": "95c4d8",
@@ -26,7 +26,7 @@
     },
     {
       "result": "g",
-      "number": "1368",
+      "id": "1365",
       "commitMessage": "add documentation for postgres scaler",
       "branch": "master",
       "hash": "95c4d8",
@@ -34,7 +34,7 @@
     },
     {
       "result": "b",
-      "number": "1367",
+      "id": "1364",
       "commitMessage": "add documentation for postgres scaler",
       "branch": "master",
       "hash": "95c4d8",
@@ -42,7 +42,7 @@
     },
     {
       "result": "p",
-      "number": "1366",
+      "id": "1363",
       "commitMessage": "add documentation for postgres scaler",
       "branch": "master",
       "hash": "95c4d8",
@@ -50,7 +50,7 @@
     },
     {
       "result": "g",
-      "number": "1368",
+      "id": "1362",
       "commitMessage": "add documentation for postgres scaler",
       "branch": "master",
       "hash": "95c4d8",
@@ -58,7 +58,7 @@
     },
     {
       "result": "b",
-      "number": "1367",
+      "id": "1361",
       "commitMessage": "add documentation for postgres scaler",
       "branch": "master",
       "hash": "95c4d8",
@@ -66,7 +66,7 @@
     },
     {
       "result": "p",
-      "number": "1366",
+      "id": "1360",
       "commitMessage": "add documentation for postgres scaler",
       "branch": "master",
       "hash": "95c4d8",
