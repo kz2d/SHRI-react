@@ -1,0 +1,77 @@
+.cardWithCircle {
+  box-shadow: 0px 0px 1px rgba(67, 68, 69, 0.3),
+    0px 1px 1px rgba(67, 68, 69, 0.3);
+  border-radius: 6px;
+  display: grid;
+  grid-template:
+    "icon color color"
+    "icon message message"
+    "icon commit commit"
+    "icon author author"
+    "icon divider divider"
+    "icon data time";
+  gap: 9px 8px;
+  grid-template-columns: auto auto 1fr;
+  padding: 16px 12px;
+  margin-bottom: 8px;
+
+  @media (min-width: 768px) {
+    padding: 16px 24px;
+    grid-template:
+      "icon color message message data"
+      "icon commit commit author timer";
+    grid-template-columns: auto auto auto 1fr auto;
+  }
+
+  .circle {
+    height: 19px;
+    width: 19px;
+    grid-area: icon;
+  }
+  .colored-green {
+    color: #00b341;
+    font-weight: 500;
+    font-size: 16px;
+    grid-area: color;
+  }
+
+  .colored-orange {
+    color: #ff9a00;
+  }
+
+  .colored-red {
+    color: #ff3333;
+  }
+  .commit-message {
+    font-size: 15px;
+    grid-area: message;
+  }
+  .smallItem {
+    display: flex;
+    font-size: 13px;
+    svg {
+      opacity: 30%;
+    }
+    .middle {
+      margin: 0 4px;
+    }
+    .secondary {
+      opacity: 65%;
+    }
+  }
+
+  .branch {
+    grid-area: commit;
+  }
+  .author {
+    grid-area: author;
+  }
+  .divider {
+    grid-area: divider;
+    height: 1px;
+    background: #f0f2f3;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}
